@@ -213,6 +213,41 @@
                             .btn-leggi:hover {
                                     background: #C74350;
                             }
+                            #content a[href*="amazon."], #content a[href*="amazon."]:visited {
+                                display: inline-block;
+                                background: #FFCC00;
+                                color: #292524 !important;
+                                padding: 10px 24px;
+                                text-decoration: none;
+                                border-radius: 6px;
+                                font-weight: bold;
+                                margin: 4px 0;
+                            }
+                            #content a[href*="amazon."]:hover {
+                                background: #e6b800;
+                                color: #292524 !important;
+                            }
+                            #contentinfo {
+                                margin: 3em auto 0;
+                                padding: 16px 20px;
+                                border-top: 1px solid #e0e0e0;
+                                max-width: 960px;
+                                text-align: left;
+                            }
+                            #contentinfo .footer-inner {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                font-size: 0.85em;
+                                color: #666;
+                            }
+                            #contentinfo a {
+                                color: #666 !important;
+                                text-decoration: none;
+                            }
+                            #contentinfo a:hover {
+                                text-decoration: underline;
+                            }
                             @media (prefers-color-scheme: dark) {
                                     #banner h1 a:hover, #banner h1 a:active {
                                             color: #FFFAF8;
@@ -237,6 +272,7 @@
                                         <a class="logo" href="./"><img src="./images/logo-techdropper.png" alt="TechDropper" /></a>
                                         <ul>
                                                 <li><a href="./">Home</a></li>
+                                                                <li><a href="./pages/disclaimer.html">Disclaimer</a></li>
                                                                 <li><a href="./category/monitor.html">Monitor</a></li>
                                                                 <li><a href="./category/offerte.html">Offerte</a></li>
                                                                 <li><a href="./category/portatili.html">Portatili</a></li>
@@ -249,27 +285,16 @@
         <h1>Categories for TechDropper</h1>
         <ul>
                 <li><a href="./category/monitor.html">Monitor</a> (2)</li>
-                <li><a href="./category/offerte.html">Offerte</a> (1)</li>
+                <li><a href="./category/offerte.html">Offerte</a> (2)</li>
                 <li><a href="./category/portatili.html">Portatili</a> (3)</li>
         </ul>
     </section>
 
-                <section id="extras" class="body">
-                                <div class="social">
-                                        <h2>social</h2>
-                                        <ul>
-                                                        <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                                        </ul>
-                                </div><!-- /.social -->
-                </section><!-- /#extras -->
-
                 <footer id="contentinfo" class="body">
-                        <address id="about" class="vcard body">
-                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
-                        </address><!-- /#about -->
-
-                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                    <div class="footer-inner">
+                        <span>2026 © All rights reserved.</span>
+                        <a href="./pages/disclaimer.html">disclaimer</a>
+                    </div>
                 </footer><!-- /#contentinfo -->
 
         </body>
