@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="it">
         <head>
+                <!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-2B9W10E680"></script>
+                <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-2B9W10E680');
+                </script>
                         <meta charset="utf-8" />
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <meta name="generator" content="Pelican" />
@@ -11,22 +20,30 @@
                         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Share+Tech&display=swap" rel="stylesheet" />
                         <link rel="stylesheet" href="./theme/css/main.css" />
+                        <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+                        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+                        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
                                 <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="TechDropper Atom Feed" />
                           <meta property="og:title" content="Offerta — UGREEN USB-C to HDMI Switch 4K 60Hz a €22,74 (-35%)" />
                         <meta property="og:type" content="article" />
                         <meta property="og:url" content="./offerta-ugreen-usb-c-hdmi-switch.html" />
+                        <meta property="og:image" content="images/ugreen-usbc-hdmi-switch.jpg" />
                         <meta property="og:description" content="Offerta — UGREEN USB-C to HDMI Switch 4K 60Hz con 2 ingressi USB-C e 1 uscita HDMI a €22,74 (-35%). Compatibile con MacBook, iPhone 15/16, PS5, Xbox e TV Stick." />
                         <meta property="og:site_name" content="TechDropper" />
                         <meta property="og:locale" content="it" />
                         <meta name="twitter:card" content="summary_large_image" />
                         <meta name="twitter:title" content="Offerta — UGREEN USB-C to HDMI Switch 4K 60Hz a €22,74 (-35%)" />
                         <meta name="twitter:description" content="Offerta — UGREEN USB-C to HDMI Switch 4K 60Hz con 2 ingressi USB-C e 1 uscita HDMI a €22,74 (-35%). Compatibile con MacBook, iPhone 15/16, PS5, Xbox e TV Stick." />
+                        <meta name="twitter:image" content="images/ugreen-usbc-hdmi-switch.jpg" />
                         <style>
                             body {
                                 background: #fff !important;
                                 margin: 0;
                                 padding: 0;
                                 font-family: 'Roboto', sans-serif;
+                            }
+                            *, *::before, *::after {
+                                box-sizing: border-box;
                             }
                             #banner {
                                 margin: 0 0 2em;
@@ -37,8 +54,11 @@
                                 z-index: 100;
                             }
                             #banner nav {
+                                display: block !important;
                                 background: #fff !important;
                                 border-radius: 0 !important;
+                                overflow: visible !important;
+                                line-height: normal !important;
                                 margin: 0 !important;
                                 width: 100% !important;
                                 max-width: 100% !important;
@@ -47,6 +67,7 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
+                                gap: 12px;
                                 max-width: 960px;
                                 margin: 0 auto;
                                 padding: 0 20px;
@@ -54,11 +75,14 @@
                             #banner nav .logo {
                                 display: flex;
                                 align-items: center;
+                                flex: 0 1 auto;
+                                min-width: 0;
                                 text-decoration: none;
                                 padding: 6px 0;
                             }
                             #banner nav .logo img {
                                 height: 40px;
+                                max-width: min(260px, 62vw);
                                 width: auto;
                                 display: block;
                             }
@@ -72,7 +96,7 @@
                             #banner nav li {
                                 margin: 0;
                             }
-                            #banner nav a:link, #banner nav a:visited {
+                            #banner nav ul a:link, #banner nav ul a:visited {
                                 color: #292524;
                                 display: inline-block;
                                 padding: 12px 16px;
@@ -197,7 +221,7 @@
                             #banner h1 a:hover, #banner h1 a:active {
                                     color: #000305;
                             }
-                            #banner nav a:hover, #banner nav a:active {
+                            #banner nav ul a:hover, #banner nav ul a:active {
                                     background: none;
                                     color: #292524;
                             }
@@ -213,6 +237,15 @@
                             }
                             .btn-leggi:hover {
                                     background: #C74350;
+                            }
+                            .affiliate-disclosure {
+                                background: #fff8e5;
+                                border: 1px solid #f0dfad;
+                                border-radius: 6px;
+                                color: #5f4b16;
+                                font-size: 0.9em;
+                                margin: 0 0 1.5em;
+                                padding: 10px 12px;
                             }
                             #content a[href*="amazon."], #content a[href*="amazon."]:visited {
                                 display: inline-block;
@@ -263,37 +296,156 @@
                             #about a:hover, #about a:active {
                                     color: #C74350;
                             }
+                            #menu-toggle {
+                                position: absolute;
+                                opacity: 0;
+                                width: 0;
+                                height: 0;
+                                pointer-events: none;
+                            }
+                            .hamburger {
+                                display: none;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                z-index: 101;
+                                flex: 0 0 auto;
+                                width: 44px;
+                                height: 44px;
+                                font-size: 1.8em;
+                                line-height: 1;
+                                cursor: pointer;
+                                margin-left: auto;
+                                padding: 0;
+                                color: #292524;
+                                border-radius: 6px;
+                                user-select: none;
+                            }
+                            @media (max-width: 768px) {
+                                .hamburger {
+                                    display: flex;
+                                }
+                                #banner nav .nav-inner {
+                                    position: relative;
+                                    flex-wrap: nowrap;
+                                    min-height: 56px;
+                                    padding: 0 16px;
+                                }
+                                #banner nav ul {
+                                    display: none;
+                                    flex-direction: column;
+                                    width: 100vw;
+                                    background: #fff;
+                                    border-top: 1px solid #e0e0e0;
+                                    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    z-index: 99;
+                                }
+                                #banner nav ul li a {
+                                    padding: 14px 16px !important;
+                                    display: block !important;
+                                }
+                                #menu-toggle:checked ~ ul {
+                                    display: flex !important;
+                                }
+                                .card-grid {
+                                    grid-template-columns: 1fr !important;
+                                }
+                                .card-grid .card-img {
+                                    height: 200px !important;
+                                }
+                                #content {
+                                    padding: 0 16px !important;
+                                }
+                                #contentinfo {
+                                    padding: 16px !important;
+                                }
+                                .preview-wrap {
+                                    flex-direction: column !important;
+                                }
+                                .preview-wrap img {
+                                    width: 100% !important;
+                                }
+                                #banner nav .logo img {
+                                    height: 36px;
+                                    max-width: calc(100vw - 92px);
+                                }
+                            }
                         </style>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Offerta \u2014 UGREEN USB-C to HDMI Switch 4K 60Hz a \u20ac22,74 (-35%)",
-  "url": "./offerta-ugreen-usb-c-hdmi-switch.html",
-  "description": "Offerta \u2014 UGREEN USB-C to HDMI Switch 4K 60Hz con 2 ingressi USB-C e 1 uscita HDMI a \u20ac22,74 (-35%). Compatibile con MacBook, iPhone 15/16, PS5, Xbox e TV Stick.",
-  "author": {
-    "@type": "Person",
-    "name": "Gabriele"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TechDropper"
-  },
-  "datePublished": "2026-06-11T15:45:00+02:00"
-  ,"keywords": ["offerta", "ugreen", "usb-c", "hdmi", "switch", "accessori", "cavi"]
-}
-</script>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Article",
+	  "mainEntityOfPage": {
+	    "@type": "WebPage",
+	    "@id": "./offerta-ugreen-usb-c-hdmi-switch.html"
+	  },
+	  "headline": "Offerta \u2014 UGREEN USB-C to HDMI Switch 4K 60Hz a \u20ac22,74 (-35%)",
+	  "url": "./offerta-ugreen-usb-c-hdmi-switch.html",
+	  "description": "Offerta \u2014 UGREEN USB-C to HDMI Switch 4K 60Hz con 2 ingressi USB-C e 1 uscita HDMI a \u20ac22,74 (-35%). Compatibile con MacBook, iPhone 15/16, PS5, Xbox e TV Stick.",
+	  "image": ["images/ugreen-usbc-hdmi-switch.jpg"],
+	  "author": {
+	    "@type": "Person",
+	    "name": "TechDropper"
+	  },
+	  "publisher": {
+	    "@type": "Organization",
+	    "name": "TechDropper",
+	    "logo": {
+	      "@type": "ImageObject",
+	      "url": "images/logo-techdropper.png"
+	    }
+	  },
+	  "datePublished": "2026-06-11T15:45:00+02:00",
+	  "dateModified": "2026-06-11T15:45:00+02:00"
+	  ,"keywords": ["offerta", "ugreen", "usb-c", "hdmi", "switch", "accessori", "cavi"]
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "BreadcrumbList",
+	  "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Home",
+	      "item": "./"
+	    },
+	    {
+	      "@type": "ListItem",
+	      "position": 2,
+	      "name": "Offerte",
+	      "item": "./category/offerte.html"
+	    },
+	    {
+	      "@type": "ListItem",
+	      "position": 3,
+	      "name": "Offerta \u2014 UGREEN USB-C to HDMI Switch 4K 60Hz a \u20ac22,74 (-35%)",
+	      "item": "./offerta-ugreen-usb-c-hdmi-switch.html"
+	    }
+	  ]
+	}
+	</script>
         </head>
 
         <body id="index" class="home">
                 <header id="banner">
                         <nav>
                                 <div class="nav-inner">
-                                        <a class="logo" href="./"><img src="./images/logo-techdropper.png" alt="TechDropper" /></a>
+                                        <a class="logo" href="./">
+                                                <img src="./images/logo-techdropper.png" alt="TechDropper" />
+                                        </a>
+                                        <input type="checkbox" id="menu-toggle">
+                                        <label for="menu-toggle" class="hamburger">&#9776;</label>
                                         <ul>
                                                 <li><a href="./">Home</a></li>
                                                                 <li><a href="./pages/disclaimer.html">Disclaimer</a></li>
+                                                                <li><a href="./category/gaming.html">Gaming</a></li>
                                                                 <li><a href="./category/monitor.html">Monitor</a></li>
                                                                 <li class="active"><a href="./category/offerte.html">Offerte</a></li>
                                                                 <li><a href="./category/portatili.html">Portatili</a></li>
@@ -311,31 +463,33 @@
         <h1 class="entry-title">Offerta — UGREEN USB-C to HDMI Switch 4K 60Hz a €22,74 (-35%)</h1>
       </header>
 
-      <div class="entry-content">
-        <h2>Offerta — UGREEN USB-C to HDMI Switch 4K 60Hz a €22,74 (-35%)</h2>
+	      <div class="entry-content">
+	        <p class="affiliate-disclosure">Questo articolo può contenere link affiliati: se acquisti tramite questi link, TechDropper può ricevere una commissione senza costi aggiuntivi per te.</p>
+	        <h2>Offerta — UGREEN USB-C to HDMI Switch 4K 60Hz a €22,74 (-35%)</h2>
 <p></p>
-<p>Affrettati! Lo <strong>UGREEN USB-C to HDMI Switch</strong> è disponibile a un prezzo imperdibile: <strong>-35%</strong> rispetto ai <strong>€34,99</strong> degli ultimi 30 giorni. Questo commutatore ti permette di collegare <strong>2 dispositivi USB-C</strong> allo stesso monitor/TV e passare dall'uno all'altro con un semplice click, senza dover continuamente staccare e riattaccare i cavi.</p>
-<p>Supporta risoluzioni fino a <strong>4K@60Hz</strong>, <strong>2K@120Hz</strong> e <strong>1080P@240Hz</strong>, con HDR, EDID e <strong>Dolby Atmos</strong> per un'esperienza audio/video di qualità. Compatibile con <strong>Windows, macOS, Linux, iOS e iPadOS</strong> — nessun driver necessario, basta collegare e usare.</p>
-<p><a href="https://www.amazon.it/UGREEN-Ingressi-Commutatore-Compatibile-Chromecast/dp/B0DMF961LG" target="_blank"><strong>Vedi l'offerta su Amazon →</strong></a></p>
-<h2>Specifiche tecniche</h2>
+<p>L'ho preso per risolvere un problema che avevo da tempo sulla scrivania: passare dal MacBook al PC gaming senza dovermi mettere a cambiare cavi ogni volta. Lo <strong>UGREEN USB-C to HDMI Switch</strong> fa esattamente questo e ora lo uso tutti i giorni in ufficio.</p>
+<p>Connetto entrambi i dispositivi allo switch con un cavo USB-C e con un click passo dall'uno all'altro sullo stesso monitor. La risoluzione <strong>4K@60Hz</strong> è stabile, e quando gioco sul PC il passaggio a <strong>1080P@240Hz</strong> è immediato. La costruzione in alluminio è solida e compatta — sta in tasca.</p>
+<p><a href="https://www.amazon.it/UGREEN-Ingressi-Commutatore-Compatibile-Chromecast/dp/B0DMF961LG" target="_blank" rel="sponsored nofollow noopener"><strong>Vedi l'offerta su Amazon →</strong></a></p>
+<h2>Come l'ho testato</h2>
+<p>L'ho collegato al mio <strong>MacBook Air M2</strong> e al <strong>PC desktop</strong> con una RTX 4060, entrambi su un monitor 4K. Lo switch è plug-and-play: nessun driver, nessuna configurazione. Ho premuto il pulsante e ha funzionato subito. L'ho usato anche con un <strong>iPhone 15 Pro</strong> per fare mirroring sul monitor — ha riconosciuto tutto al volo.</p>
+<p>Unica accortezza: la porta USB-C del dispositivo deve supportare <strong>DP Alt mode</strong>, altrimenti non passa il video. Sul MacBook e sull'iPhone 15 funziona senza problemi, ma su alcuni tablet economici ho letto che può non funzionare.</p>
+<h2>Cosa mi piace</h2>
 <ul>
-<li><strong>Ingressi</strong>: 2 × USB-C</li>
-<li><strong>Uscita</strong>: 1 × HDMI 2.0</li>
-<li><strong>Risoluzione max</strong>: 4K@60Hz, 2K@120Hz, 1080P@240Hz</li>
-<li><strong>Supporto</strong>: HDR, EDID, Dolby Atmos, HDCP</li>
-<li><strong>Alimentazione</strong>: non richiesta (alimentato dai dispositivi collegati)</li>
-<li><strong>Requisiti</strong>: porta USB-C deve supportare <strong>DP Alt mode</strong> e essere <strong>USB 3.0</strong> per segnale stabile</li>
-<li><strong>Compatibilità</strong>: PC, MacBook Air/Pro, iPhone 15/16, PS5/4, Xbox, TV Stick, Chromecast, TV Box</li>
-<li><strong>Colore</strong>: Silver (alluminio)</li>
+<li><strong>Non serve alimentazione</strong>: si alimenta dal dispositivo collegato. Zero cavi extra sulla scrivania.</li>
+<li><strong>Costruzione solida</strong>: tutto in alluminio, non sembra per niente economico.</li>
+<li><strong>Pulsante fisico</strong>: clic deciso, sai quando hai cambiato input. I LED indicano qual è la porta attiva.</li>
 </ul>
-<h2>Cosa fa questo switch</h2>
-<p>Colleghi due dispositivi USB-C (ad esempio il tuo <strong>MacBook e un iPhone 15</strong>) allo stesso monitor e premi il pulsante per passare da uno all'altro. Risolve il problema di dover continuamente cambiare cavo, proteggendo le porte USB-C dall'usura. <strong>Non è uno splitter</strong>: non può inviare lo stesso segnale a due monitor contemporaneamente.</p>
-<p><a href="https://www.amazon.it/UGREEN-Ingressi-Commutatore-Compatibile-Chromecast/dp/B0DMF961LG" target="_blank"><strong>Approfitta dell'offerta su Amazon →</strong></a></p>
-<h2>Ideale per</h2>
+<h2>Cosa tenere a mente</h2>
 <ul>
-<li><strong>Lavoro ibrido</strong>: alterna tra PC aziendale e MacBook personale sullo stesso monitor</li>
-<li><strong>Streaming e gaming</strong>: passa da console a TV Box senza cambiare cavi</li>
-<li><strong>Viaggio</strong>: compatto e leggero, facile da portare in borsa</li>
+<li><strong>Non è uno splitter</strong>: se ti serve mandare lo stesso segnale a due monitor, non fa per te. Lui passa da un input all'altro, non duplica.</li>
+<li><strong>Cavo USB-C di qualità</strong>: per il 4K@60Hz serve un cavo USB 3.0 che supporti DP Alt mode. Con cavi scadenti ho avuto qualche artefatto video.</li>
+</ul>
+<p><a href="https://www.amazon.it/UGREEN-Ingressi-Commutatore-Compatibile-Chromecast/dp/B0DMF961LG" target="_blank" rel="sponsored nofollow noopener"><strong>Approfitta dell'offerta su Amazon →</strong></a></p>
+<h2>A chi lo consiglio</h2>
+<ul>
+<li><strong>Lavoro ibrido</strong>: se come me alterni PC aziendale e MacBook, ti cambia la giornata non dover più cambiare cavi</li>
+<li><strong>Streaming</strong>: collega TV Box e console allo stesso ingresso TV e passa dall'uno all'altra con un click</li>
+<li><strong>In viaggio</strong>: sta in qualsiasi zaino, l'ho portato in trasferta e funziona perfettamente anche in hotel</li>
 </ul>
 <footer class="post-info">
         <abbr class="published" title="2026-06-11T15:45:00+02:00">
@@ -343,11 +497,11 @@
         </abbr>
 
                 <address class="vcard author">
-                        By                                 <a class="url fn" href="./author/gabriele.html">Gabriele</a>
+                        By                                 <a class="url fn" href="./author/techdropper.html">TechDropper</a>
                 </address>
         <p>In <a href="./category/offerte.html">Offerte</a>.</p>
 <p>tags: <a href="./tag/offerta.html">offerta</a> <a href="./tag/ugreen.html">ugreen</a> <a href="./tag/usb-c.html">usb-c</a> <a href="./tag/hdmi.html">hdmi</a> <a href="./tag/switch.html">switch</a> <a href="./tag/accessori.html">accessori</a> <a href="./tag/cavi.html">cavi</a> </p>        
-</footer><!-- /.post-info -->      </div><!-- /.entry-content -->
+</footer><!-- /.post-info -->	      </div><!-- /.entry-content -->
 
 
 

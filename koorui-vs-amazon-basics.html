@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="it">
         <head>
+                <!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-2B9W10E680"></script>
+                <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-2B9W10E680');
+                </script>
                         <meta charset="utf-8" />
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <meta name="generator" content="Pelican" />
@@ -11,22 +20,30 @@
                         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Share+Tech&display=swap" rel="stylesheet" />
                         <link rel="stylesheet" href="./theme/css/main.css" />
+                        <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+                        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+                        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
                                 <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="TechDropper Atom Feed" />
                           <meta property="og:title" content="KOORUI 24E6C vs Amazon Basics 23.8" — Quale Monitor Economico Scegliere?" />
                         <meta property="og:type" content="article" />
                         <meta property="og:url" content="./koorui-vs-amazon-basics.html" />
+                        <meta property="og:image" content="images/koorui-24e6c.jpg" />
                         <meta property="og:description" content="KOORUI 24E6C (curvo, 165Hz) vs Amazon Basics (IPS, 120Hz): confronto tra due monitor economici per gaming, ufficio e programmazione. Prezzi, pro e contro e verdetto finale." />
                         <meta property="og:site_name" content="TechDropper" />
                         <meta property="og:locale" content="it" />
                         <meta name="twitter:card" content="summary_large_image" />
                         <meta name="twitter:title" content="KOORUI 24E6C vs Amazon Basics 23.8" — Quale Monitor Economico Scegliere?" />
                         <meta name="twitter:description" content="KOORUI 24E6C (curvo, 165Hz) vs Amazon Basics (IPS, 120Hz): confronto tra due monitor economici per gaming, ufficio e programmazione. Prezzi, pro e contro e verdetto finale." />
+                        <meta name="twitter:image" content="images/koorui-24e6c.jpg" />
                         <style>
                             body {
                                 background: #fff !important;
                                 margin: 0;
                                 padding: 0;
                                 font-family: 'Roboto', sans-serif;
+                            }
+                            *, *::before, *::after {
+                                box-sizing: border-box;
                             }
                             #banner {
                                 margin: 0 0 2em;
@@ -37,8 +54,11 @@
                                 z-index: 100;
                             }
                             #banner nav {
+                                display: block !important;
                                 background: #fff !important;
                                 border-radius: 0 !important;
+                                overflow: visible !important;
+                                line-height: normal !important;
                                 margin: 0 !important;
                                 width: 100% !important;
                                 max-width: 100% !important;
@@ -47,6 +67,7 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
+                                gap: 12px;
                                 max-width: 960px;
                                 margin: 0 auto;
                                 padding: 0 20px;
@@ -54,11 +75,14 @@
                             #banner nav .logo {
                                 display: flex;
                                 align-items: center;
+                                flex: 0 1 auto;
+                                min-width: 0;
                                 text-decoration: none;
                                 padding: 6px 0;
                             }
                             #banner nav .logo img {
                                 height: 40px;
+                                max-width: min(260px, 62vw);
                                 width: auto;
                                 display: block;
                             }
@@ -72,7 +96,7 @@
                             #banner nav li {
                                 margin: 0;
                             }
-                            #banner nav a:link, #banner nav a:visited {
+                            #banner nav ul a:link, #banner nav ul a:visited {
                                 color: #292524;
                                 display: inline-block;
                                 padding: 12px 16px;
@@ -197,7 +221,7 @@
                             #banner h1 a:hover, #banner h1 a:active {
                                     color: #000305;
                             }
-                            #banner nav a:hover, #banner nav a:active {
+                            #banner nav ul a:hover, #banner nav ul a:active {
                                     background: none;
                                     color: #292524;
                             }
@@ -213,6 +237,15 @@
                             }
                             .btn-leggi:hover {
                                     background: #C74350;
+                            }
+                            .affiliate-disclosure {
+                                background: #fff8e5;
+                                border: 1px solid #f0dfad;
+                                border-radius: 6px;
+                                color: #5f4b16;
+                                font-size: 0.9em;
+                                margin: 0 0 1.5em;
+                                padding: 10px 12px;
                             }
                             #content a[href*="amazon."], #content a[href*="amazon."]:visited {
                                 display: inline-block;
@@ -263,37 +296,156 @@
                             #about a:hover, #about a:active {
                                     color: #C74350;
                             }
+                            #menu-toggle {
+                                position: absolute;
+                                opacity: 0;
+                                width: 0;
+                                height: 0;
+                                pointer-events: none;
+                            }
+                            .hamburger {
+                                display: none;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                z-index: 101;
+                                flex: 0 0 auto;
+                                width: 44px;
+                                height: 44px;
+                                font-size: 1.8em;
+                                line-height: 1;
+                                cursor: pointer;
+                                margin-left: auto;
+                                padding: 0;
+                                color: #292524;
+                                border-radius: 6px;
+                                user-select: none;
+                            }
+                            @media (max-width: 768px) {
+                                .hamburger {
+                                    display: flex;
+                                }
+                                #banner nav .nav-inner {
+                                    position: relative;
+                                    flex-wrap: nowrap;
+                                    min-height: 56px;
+                                    padding: 0 16px;
+                                }
+                                #banner nav ul {
+                                    display: none;
+                                    flex-direction: column;
+                                    width: 100vw;
+                                    background: #fff;
+                                    border-top: 1px solid #e0e0e0;
+                                    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    z-index: 99;
+                                }
+                                #banner nav ul li a {
+                                    padding: 14px 16px !important;
+                                    display: block !important;
+                                }
+                                #menu-toggle:checked ~ ul {
+                                    display: flex !important;
+                                }
+                                .card-grid {
+                                    grid-template-columns: 1fr !important;
+                                }
+                                .card-grid .card-img {
+                                    height: 200px !important;
+                                }
+                                #content {
+                                    padding: 0 16px !important;
+                                }
+                                #contentinfo {
+                                    padding: 16px !important;
+                                }
+                                .preview-wrap {
+                                    flex-direction: column !important;
+                                }
+                                .preview-wrap img {
+                                    width: 100% !important;
+                                }
+                                #banner nav .logo img {
+                                    height: 36px;
+                                    max-width: calc(100vw - 92px);
+                                }
+                            }
                         </style>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "KOORUI 24E6C vs Amazon Basics 23.8\" \u2014 Quale Monitor Economico Scegliere?",
-  "url": "./koorui-vs-amazon-basics.html",
-  "description": "KOORUI 24E6C (curvo, 165Hz) vs Amazon Basics (IPS, 120Hz): confronto tra due monitor economici per gaming, ufficio e programmazione. Prezzi, pro e contro e verdetto finale.",
-  "author": {
-    "@type": "Person",
-    "name": "Gabriele"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TechDropper"
-  },
-  "datePublished": "2026-06-09T18:00:00+02:00"
-  ,"keywords": ["monitor", "koorui", "amazon basics", "confronto", "gaming", "ufficio"]
-}
-</script>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Article",
+	  "mainEntityOfPage": {
+	    "@type": "WebPage",
+	    "@id": "./koorui-vs-amazon-basics.html"
+	  },
+	  "headline": "KOORUI 24E6C vs Amazon Basics 23.8\" \u2014 Quale Monitor Economico Scegliere?",
+	  "url": "./koorui-vs-amazon-basics.html",
+	  "description": "KOORUI 24E6C (curvo, 165Hz) vs Amazon Basics (IPS, 120Hz): confronto tra due monitor economici per gaming, ufficio e programmazione. Prezzi, pro e contro e verdetto finale.",
+	  "image": ["images/koorui-24e6c.jpg"],
+	  "author": {
+	    "@type": "Person",
+	    "name": "TechDropper"
+	  },
+	  "publisher": {
+	    "@type": "Organization",
+	    "name": "TechDropper",
+	    "logo": {
+	      "@type": "ImageObject",
+	      "url": "images/logo-techdropper.png"
+	    }
+	  },
+	  "datePublished": "2026-06-09T18:00:00+02:00",
+	  "dateModified": "2026-06-09T18:00:00+02:00"
+	  ,"keywords": ["monitor", "koorui", "amazon basics", "confronto", "gaming", "ufficio"]
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "BreadcrumbList",
+	  "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Home",
+	      "item": "./"
+	    },
+	    {
+	      "@type": "ListItem",
+	      "position": 2,
+	      "name": "Monitor",
+	      "item": "./category/monitor.html"
+	    },
+	    {
+	      "@type": "ListItem",
+	      "position": 3,
+	      "name": "KOORUI 24E6C vs Amazon Basics 23.8\" \u2014 Quale Monitor Economico Scegliere?",
+	      "item": "./koorui-vs-amazon-basics.html"
+	    }
+	  ]
+	}
+	</script>
         </head>
 
         <body id="index" class="home">
                 <header id="banner">
                         <nav>
                                 <div class="nav-inner">
-                                        <a class="logo" href="./"><img src="./images/logo-techdropper.png" alt="TechDropper" /></a>
+                                        <a class="logo" href="./">
+                                                <img src="./images/logo-techdropper.png" alt="TechDropper" />
+                                        </a>
+                                        <input type="checkbox" id="menu-toggle">
+                                        <label for="menu-toggle" class="hamburger">&#9776;</label>
                                         <ul>
                                                 <li><a href="./">Home</a></li>
                                                                 <li><a href="./pages/disclaimer.html">Disclaimer</a></li>
+                                                                <li><a href="./category/gaming.html">Gaming</a></li>
                                                                 <li class="active"><a href="./category/monitor.html">Monitor</a></li>
                                                                 <li><a href="./category/offerte.html">Offerte</a></li>
                                                                 <li><a href="./category/portatili.html">Portatili</a></li>
@@ -311,17 +463,18 @@
         <h1 class="entry-title">KOORUI 24E6C vs Amazon Basics 23.8" — Quale Monitor Economico Scegliere?</h1>
       </header>
 
-      <div class="entry-content">
-        <p>Due monitor economici molto popolari su Amazon: il <strong>KOORUI 24E6C</strong> (curvo, 165Hz) e l'<strong>Amazon Basics 23.8"</strong> (IPS, 120Hz). Ecco un confronto diretto per capire quale fa al caso tuo.</p>
+	      <div class="entry-content">
+	        <p class="affiliate-disclosure">Questo articolo può contenere link affiliati: se acquisti tramite questi link, TechDropper può ricevere una commissione senza costi aggiuntivi per te.</p>
+	        <p>Due monitor economici molto popolari su Amazon: il <strong>KOORUI 24E6C</strong> (curvo, 165Hz) e l'<strong>Amazon Basics 23.8"</strong> (IPS, 120Hz). Ecco un confronto diretto per capire quale fa al caso tuo.</p>
 <hr>
 <h2>KOORUI Gaming Monitor 24E6C — €104,99</h2>
 <p></p>
 <p>Monitor curvo da 23.6" con pannello VA, risoluzione FHD (1920×1080), refresh rate a <strong>165Hz</strong> e tempo di risposta di <strong>1ms</strong>. Curvatura 1800R, copertura DCI-P3 90%, contrasto 3000:1. Ingessi: HDMI 1.4 (144Hz), DP 1.2 (165Hz), audio out.</p>
-<p><a href="https://www.amazon.it/KOORUI-1920%C3%971080-Mornitor-Inclinazione-Regolabile/dp/B0C23M7Y9V/" target="_blank">Vedi su Amazon</a></p>
+<p><a href="https://www.amazon.it/KOORUI-1920%C3%971080-Mornitor-Inclinazione-Regolabile/dp/B0C23M7Y9V/" target="_blank" rel="sponsored nofollow noopener">Vedi su Amazon</a></p>
 <h2>Amazon Basics Monitor 23.8" — €80,09</h2>
 <p><img src="./images/amazon-basics-monitor.jpg" alt='Amazon Basics 23.8"' style="width: 300px; display: block; margin-bottom: 10px; background: #fff;"></p>
 <p>Monitor piatto da 23.8" con pannello <strong>IPS</strong>, risoluzione FHD (1920×1080), refresh rate a <strong>120Hz</strong> con Adaptive Sync, tempo di risposta di <strong>14ms</strong>. Copertura sRGB 99%, contrasto 1500:1. Include <strong>altoparlanti integrati 2W×2</strong>. Ingressi: HDMI 1.4, DP 1.2, VGA, audio out. Tecnologia LowBlue Light e Flicker-Free.</p>
-<p><a href="https://www.amazon.it/Amazon-Basics-Monitor-Computer-Compatibile/dp/B0DZ5V7H86/" target="_blank">Vedi su Amazon</a></p>
+<p><a href="https://www.amazon.it/Amazon-Basics-Monitor-Computer-Compatibile/dp/B0DZ5V7H86/" target="_blank" rel="sponsored nofollow noopener">Vedi su Amazon</a></p>
 <hr>
 <h2>Pro e Contro</h2>
 <h3>KOORUI 24E6C</h3>
@@ -441,11 +594,11 @@
         </abbr>
 
                 <address class="vcard author">
-                        By                                 <a class="url fn" href="./author/gabriele.html">Gabriele</a>
+                        By                                 <a class="url fn" href="./author/techdropper.html">TechDropper</a>
                 </address>
         <p>In <a href="./category/monitor.html">Monitor</a>.</p>
 <p>tags: <a href="./tag/monitor.html">monitor</a> <a href="./tag/koorui.html">koorui</a> <a href="./tag/amazon-basics.html">amazon basics</a> <a href="./tag/confronto.html">confronto</a> <a href="./tag/gaming.html">gaming</a> <a href="./tag/ufficio.html">ufficio</a> </p>        
-</footer><!-- /.post-info -->      </div><!-- /.entry-content -->
+</footer><!-- /.post-info -->	      </div><!-- /.entry-content -->
 
 
 

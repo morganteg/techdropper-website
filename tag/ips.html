@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="it">
         <head>
+                <!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-2B9W10E680"></script>
+                <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-2B9W10E680');
+                </script>
                         <meta charset="utf-8" />
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <meta name="generator" content="Pelican" />
@@ -10,22 +19,30 @@
                         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Share+Tech&display=swap" rel="stylesheet" />
                         <link rel="stylesheet" href="../theme/css/main.css" />
+                        <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+                        <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+                        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
                                 <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="TechDropper Atom Feed" />
                         <meta property="og:title" content="TechDropper" />
                         <meta property="og:type" content="website" />
                         <meta property="og:url" content="../" />
+                        <meta property="og:image" content="images/logo-techdropper.png" />
                         <meta property="og:description" content="TechDropper" />
                         <meta property="og:site_name" content="TechDropper" />
                         <meta property="og:locale" content="it" />
                         <meta name="twitter:card" content="summary_large_image" />
                         <meta name="twitter:title" content="TechDropper" />
                         <meta name="twitter:description" content="TechDropper" />
+                        <meta name="twitter:image" content="images/logo-techdropper.png" />
                         <style>
                             body {
                                 background: #fff !important;
                                 margin: 0;
                                 padding: 0;
                                 font-family: 'Roboto', sans-serif;
+                            }
+                            *, *::before, *::after {
+                                box-sizing: border-box;
                             }
                             #banner {
                                 margin: 0 0 2em;
@@ -36,8 +53,11 @@
                                 z-index: 100;
                             }
                             #banner nav {
+                                display: block !important;
                                 background: #fff !important;
                                 border-radius: 0 !important;
+                                overflow: visible !important;
+                                line-height: normal !important;
                                 margin: 0 !important;
                                 width: 100% !important;
                                 max-width: 100% !important;
@@ -46,6 +66,7 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
+                                gap: 12px;
                                 max-width: 960px;
                                 margin: 0 auto;
                                 padding: 0 20px;
@@ -53,11 +74,14 @@
                             #banner nav .logo {
                                 display: flex;
                                 align-items: center;
+                                flex: 0 1 auto;
+                                min-width: 0;
                                 text-decoration: none;
                                 padding: 6px 0;
                             }
                             #banner nav .logo img {
                                 height: 40px;
+                                max-width: min(260px, 62vw);
                                 width: auto;
                                 display: block;
                             }
@@ -71,7 +95,7 @@
                             #banner nav li {
                                 margin: 0;
                             }
-                            #banner nav a:link, #banner nav a:visited {
+                            #banner nav ul a:link, #banner nav ul a:visited {
                                 color: #292524;
                                 display: inline-block;
                                 padding: 12px 16px;
@@ -196,7 +220,7 @@
                             #banner h1 a:hover, #banner h1 a:active {
                                     color: #000305;
                             }
-                            #banner nav a:hover, #banner nav a:active {
+                            #banner nav ul a:hover, #banner nav ul a:active {
                                     background: none;
                                     color: #292524;
                             }
@@ -212,6 +236,15 @@
                             }
                             .btn-leggi:hover {
                                     background: #C74350;
+                            }
+                            .affiliate-disclosure {
+                                background: #fff8e5;
+                                border: 1px solid #f0dfad;
+                                border-radius: 6px;
+                                color: #5f4b16;
+                                font-size: 0.9em;
+                                margin: 0 0 1.5em;
+                                padding: 10px 12px;
                             }
                             #content a[href*="amazon."], #content a[href*="amazon."]:visited {
                                 display: inline-block;
@@ -262,6 +295,84 @@
                             #about a:hover, #about a:active {
                                     color: #C74350;
                             }
+                            #menu-toggle {
+                                position: absolute;
+                                opacity: 0;
+                                width: 0;
+                                height: 0;
+                                pointer-events: none;
+                            }
+                            .hamburger {
+                                display: none;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                z-index: 101;
+                                flex: 0 0 auto;
+                                width: 44px;
+                                height: 44px;
+                                font-size: 1.8em;
+                                line-height: 1;
+                                cursor: pointer;
+                                margin-left: auto;
+                                padding: 0;
+                                color: #292524;
+                                border-radius: 6px;
+                                user-select: none;
+                            }
+                            @media (max-width: 768px) {
+                                .hamburger {
+                                    display: flex;
+                                }
+                                #banner nav .nav-inner {
+                                    position: relative;
+                                    flex-wrap: nowrap;
+                                    min-height: 56px;
+                                    padding: 0 16px;
+                                }
+                                #banner nav ul {
+                                    display: none;
+                                    flex-direction: column;
+                                    width: 100vw;
+                                    background: #fff;
+                                    border-top: 1px solid #e0e0e0;
+                                    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    z-index: 99;
+                                }
+                                #banner nav ul li a {
+                                    padding: 14px 16px !important;
+                                    display: block !important;
+                                }
+                                #menu-toggle:checked ~ ul {
+                                    display: flex !important;
+                                }
+                                .card-grid {
+                                    grid-template-columns: 1fr !important;
+                                }
+                                .card-grid .card-img {
+                                    height: 200px !important;
+                                }
+                                #content {
+                                    padding: 0 16px !important;
+                                }
+                                #contentinfo {
+                                    padding: 16px !important;
+                                }
+                                .preview-wrap {
+                                    flex-direction: column !important;
+                                }
+                                .preview-wrap img {
+                                    width: 100% !important;
+                                }
+                                #banner nav .logo img {
+                                    height: 36px;
+                                    max-width: calc(100vw - 92px);
+                                }
+                            }
                         </style>
         </head>
 
@@ -269,10 +380,15 @@
                 <header id="banner">
                         <nav>
                                 <div class="nav-inner">
-                                        <a class="logo" href="../"><img src="../images/logo-techdropper.png" alt="TechDropper" /></a>
+                                        <a class="logo" href="../">
+                                                <img src="../images/logo-techdropper.png" alt="TechDropper" />
+                                        </a>
+                                        <input type="checkbox" id="menu-toggle">
+                                        <label for="menu-toggle" class="hamburger">&#9776;</label>
                                         <ul>
                                                 <li><a href="../">Home</a></li>
                                                                 <li><a href="../pages/disclaimer.html">Disclaimer</a></li>
+                                                                <li><a href="../category/gaming.html">Gaming</a></li>
                                                                 <li><a href="../category/monitor.html">Monitor</a></li>
                                                                 <li><a href="../category/offerte.html">Offerte</a></li>
                                                                 <li><a href="../category/portatili.html">Portatili</a></li>
@@ -283,16 +399,37 @@
         <section id="content" class="body">
             <article class="hentry">
                         <div class="article-hero">
-                            <img src="../images/lenovo-l24-45-monitor.jpg" alt="">
+                            <img src="../images/msi-mag-272f.jpg" alt="">
                         </div>
                     <header>
-                        <h1 class="entry-title"><a href="../lenovo-l24-45-monitor.html">Lenovo L24-45 — Monitor 24" IPS 144Hz in Offerta</a></h1>
+                        <h1 class="entry-title"><a href="../msi-mag-272f.html">MSI MAG 272F — Monitor Gaming 27" Rapid IPS 200Hz a €129,00</a></h1>
                     </header>
                     <div class="entry-content">
-                        <div class="preview-text"><p>Lenovo L24-45 Monitor 24" IPS Full HD 144Hz in offerta a €89,99 (30% di sconto). Scopri il monitor da gaming economico con 1ms di risposta e AMD FreeSync.</p></div>
+                        <div class="preview-text"><p>MSI MAG 272F, monitor gaming 27" Rapid IPS Full HD con 200Hz, 0.5ms, AMD FreeSync Premium, AI Vision e HDMI CEC.</p></div>
                     </div>
                     </article>
 
+                <h2 class="category-heading">Monitor</h2>
+                <div class="card-grid">
+                    <article class="hentry">
+                            <img class="card-img" src="../images/lenovo-legion-24-15.jpg" alt="">
+                        <header>
+                            <h1><a href="../lenovo-legion-24-15.html">Lenovo Legion 24-15 — Monitor Gaming 24" IPS 240Hz a €109,99</a></h1>
+                        </header>
+                        <div class="entry-content">
+                            <div class="preview-text"><p>Lenovo Legion 24-15, monitor gaming 24" IPS Full HD con 240Hz, 0.5ms, AMD FreeSync Premium e supporto completamente regolabile.</p></div>
+                        </div>
+                    </article>
+                    <article class="hentry">
+                            <img class="card-img" src="../images/lenovo-l24-45-monitor.jpg" alt="">
+                        <header>
+                            <h1><a href="../lenovo-l24-45-monitor.html">Lenovo L24-45 — Monitor 24" IPS 144Hz in Offerta</a></h1>
+                        </header>
+                        <div class="entry-content">
+                            <div class="preview-text"><p>Lenovo L24-45 Monitor 24" IPS Full HD 144Hz in offerta a €89,99 (30% di sconto). Scopri il monitor da gaming economico con 1ms di risposta e AMD FreeSync.</p></div>
+                        </div>
+                    </article>
+                </div>
 
         </section>
                 <footer id="contentinfo" class="body">

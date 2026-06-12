@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="it">
         <head>
+                <!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-2B9W10E680"></script>
+                <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-2B9W10E680');
+                </script>
                         <meta charset="utf-8" />
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <meta name="generator" content="Pelican" />
@@ -11,22 +20,30 @@
                         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Share+Tech&display=swap" rel="stylesheet" />
                         <link rel="stylesheet" href="./theme/css/main.css" />
+                        <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+                        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+                        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
                                 <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="TechDropper Atom Feed" />
                           <meta property="og:title" content="Lenovo Yoga Slim 7i Aura Edition — OLED e Intel Core Ultra 7" />
                         <meta property="og:type" content="article" />
                         <meta property="og:url" content="./lenovo-yoga-slim-7i-aura.html" />
+                        <meta property="og:image" content="images/lenovo-yoga-slim-7i-aura.jpg" />
                         <meta property="og:description" content="Lenovo Yoga Slim 7i Aura Edition con display OLED 14&#34;, Intel Core Ultra 7 256V, 16 GB RAM e 1 TB SSD. Scopri il portatile leggero e potente di Lenovo." />
                         <meta property="og:site_name" content="TechDropper" />
                         <meta property="og:locale" content="it" />
                         <meta name="twitter:card" content="summary_large_image" />
                         <meta name="twitter:title" content="Lenovo Yoga Slim 7i Aura Edition — OLED e Intel Core Ultra 7" />
                         <meta name="twitter:description" content="Lenovo Yoga Slim 7i Aura Edition con display OLED 14&#34;, Intel Core Ultra 7 256V, 16 GB RAM e 1 TB SSD. Scopri il portatile leggero e potente di Lenovo." />
+                        <meta name="twitter:image" content="images/lenovo-yoga-slim-7i-aura.jpg" />
                         <style>
                             body {
                                 background: #fff !important;
                                 margin: 0;
                                 padding: 0;
                                 font-family: 'Roboto', sans-serif;
+                            }
+                            *, *::before, *::after {
+                                box-sizing: border-box;
                             }
                             #banner {
                                 margin: 0 0 2em;
@@ -37,8 +54,11 @@
                                 z-index: 100;
                             }
                             #banner nav {
+                                display: block !important;
                                 background: #fff !important;
                                 border-radius: 0 !important;
+                                overflow: visible !important;
+                                line-height: normal !important;
                                 margin: 0 !important;
                                 width: 100% !important;
                                 max-width: 100% !important;
@@ -47,6 +67,7 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
+                                gap: 12px;
                                 max-width: 960px;
                                 margin: 0 auto;
                                 padding: 0 20px;
@@ -54,11 +75,14 @@
                             #banner nav .logo {
                                 display: flex;
                                 align-items: center;
+                                flex: 0 1 auto;
+                                min-width: 0;
                                 text-decoration: none;
                                 padding: 6px 0;
                             }
                             #banner nav .logo img {
                                 height: 40px;
+                                max-width: min(260px, 62vw);
                                 width: auto;
                                 display: block;
                             }
@@ -72,7 +96,7 @@
                             #banner nav li {
                                 margin: 0;
                             }
-                            #banner nav a:link, #banner nav a:visited {
+                            #banner nav ul a:link, #banner nav ul a:visited {
                                 color: #292524;
                                 display: inline-block;
                                 padding: 12px 16px;
@@ -197,7 +221,7 @@
                             #banner h1 a:hover, #banner h1 a:active {
                                     color: #000305;
                             }
-                            #banner nav a:hover, #banner nav a:active {
+                            #banner nav ul a:hover, #banner nav ul a:active {
                                     background: none;
                                     color: #292524;
                             }
@@ -213,6 +237,15 @@
                             }
                             .btn-leggi:hover {
                                     background: #C74350;
+                            }
+                            .affiliate-disclosure {
+                                background: #fff8e5;
+                                border: 1px solid #f0dfad;
+                                border-radius: 6px;
+                                color: #5f4b16;
+                                font-size: 0.9em;
+                                margin: 0 0 1.5em;
+                                padding: 10px 12px;
                             }
                             #content a[href*="amazon."], #content a[href*="amazon."]:visited {
                                 display: inline-block;
@@ -263,37 +296,156 @@
                             #about a:hover, #about a:active {
                                     color: #C74350;
                             }
+                            #menu-toggle {
+                                position: absolute;
+                                opacity: 0;
+                                width: 0;
+                                height: 0;
+                                pointer-events: none;
+                            }
+                            .hamburger {
+                                display: none;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                z-index: 101;
+                                flex: 0 0 auto;
+                                width: 44px;
+                                height: 44px;
+                                font-size: 1.8em;
+                                line-height: 1;
+                                cursor: pointer;
+                                margin-left: auto;
+                                padding: 0;
+                                color: #292524;
+                                border-radius: 6px;
+                                user-select: none;
+                            }
+                            @media (max-width: 768px) {
+                                .hamburger {
+                                    display: flex;
+                                }
+                                #banner nav .nav-inner {
+                                    position: relative;
+                                    flex-wrap: nowrap;
+                                    min-height: 56px;
+                                    padding: 0 16px;
+                                }
+                                #banner nav ul {
+                                    display: none;
+                                    flex-direction: column;
+                                    width: 100vw;
+                                    background: #fff;
+                                    border-top: 1px solid #e0e0e0;
+                                    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    z-index: 99;
+                                }
+                                #banner nav ul li a {
+                                    padding: 14px 16px !important;
+                                    display: block !important;
+                                }
+                                #menu-toggle:checked ~ ul {
+                                    display: flex !important;
+                                }
+                                .card-grid {
+                                    grid-template-columns: 1fr !important;
+                                }
+                                .card-grid .card-img {
+                                    height: 200px !important;
+                                }
+                                #content {
+                                    padding: 0 16px !important;
+                                }
+                                #contentinfo {
+                                    padding: 16px !important;
+                                }
+                                .preview-wrap {
+                                    flex-direction: column !important;
+                                }
+                                .preview-wrap img {
+                                    width: 100% !important;
+                                }
+                                #banner nav .logo img {
+                                    height: 36px;
+                                    max-width: calc(100vw - 92px);
+                                }
+                            }
                         </style>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Lenovo Yoga Slim 7i Aura Edition \u2014 OLED e Intel Core Ultra 7",
-  "url": "./lenovo-yoga-slim-7i-aura.html",
-  "description": "Lenovo Yoga Slim 7i Aura Edition con display OLED 14\u0026#34;, Intel Core Ultra 7 256V, 16 GB RAM e 1 TB SSD. Scopri il portatile leggero e potente di Lenovo.",
-  "author": {
-    "@type": "Person",
-    "name": "Gabriele"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TechDropper"
-  },
-  "datePublished": "2026-06-10T10:00:00+02:00"
-  ,"keywords": ["lenovo", "yoga", "slim 7i", "aura edition", "portatile", "oled", "ultra 7"]
-}
-</script>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Article",
+	  "mainEntityOfPage": {
+	    "@type": "WebPage",
+	    "@id": "./lenovo-yoga-slim-7i-aura.html"
+	  },
+	  "headline": "Lenovo Yoga Slim 7i Aura Edition \u2014 OLED e Intel Core Ultra 7",
+	  "url": "./lenovo-yoga-slim-7i-aura.html",
+	  "description": "Lenovo Yoga Slim 7i Aura Edition con display OLED 14\u0026#34;, Intel Core Ultra 7 256V, 16 GB RAM e 1 TB SSD. Scopri il portatile leggero e potente di Lenovo.",
+	  "image": ["images/lenovo-yoga-slim-7i-aura.jpg"],
+	  "author": {
+	    "@type": "Person",
+	    "name": "TechDropper"
+	  },
+	  "publisher": {
+	    "@type": "Organization",
+	    "name": "TechDropper",
+	    "logo": {
+	      "@type": "ImageObject",
+	      "url": "images/logo-techdropper.png"
+	    }
+	  },
+	  "datePublished": "2026-06-10T10:00:00+02:00",
+	  "dateModified": "2026-06-10T10:00:00+02:00"
+	  ,"keywords": ["lenovo", "yoga", "slim 7i", "aura edition", "portatile", "oled", "ultra 7"]
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "BreadcrumbList",
+	  "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Home",
+	      "item": "./"
+	    },
+	    {
+	      "@type": "ListItem",
+	      "position": 2,
+	      "name": "Portatili",
+	      "item": "./category/portatili.html"
+	    },
+	    {
+	      "@type": "ListItem",
+	      "position": 3,
+	      "name": "Lenovo Yoga Slim 7i Aura Edition \u2014 OLED e Intel Core Ultra 7",
+	      "item": "./lenovo-yoga-slim-7i-aura.html"
+	    }
+	  ]
+	}
+	</script>
         </head>
 
         <body id="index" class="home">
                 <header id="banner">
                         <nav>
                                 <div class="nav-inner">
-                                        <a class="logo" href="./"><img src="./images/logo-techdropper.png" alt="TechDropper" /></a>
+                                        <a class="logo" href="./">
+                                                <img src="./images/logo-techdropper.png" alt="TechDropper" />
+                                        </a>
+                                        <input type="checkbox" id="menu-toggle">
+                                        <label for="menu-toggle" class="hamburger">&#9776;</label>
                                         <ul>
                                                 <li><a href="./">Home</a></li>
                                                                 <li><a href="./pages/disclaimer.html">Disclaimer</a></li>
+                                                                <li><a href="./category/gaming.html">Gaming</a></li>
                                                                 <li><a href="./category/monitor.html">Monitor</a></li>
                                                                 <li><a href="./category/offerte.html">Offerte</a></li>
                                                                 <li class="active"><a href="./category/portatili.html">Portatili</a></li>
@@ -311,11 +463,12 @@
         <h1 class="entry-title">Lenovo Yoga Slim 7i Aura Edition — OLED e Intel Core Ultra 7</h1>
       </header>
 
-      <div class="entry-content">
-        <h2>Lenovo Yoga Slim 7i Aura Edition — €1.049</h2>
+	      <div class="entry-content">
+	        <p class="affiliate-disclosure">Questo articolo può contenere link affiliati: se acquisti tramite questi link, TechDropper può ricevere una commissione senza costi aggiuntivi per te.</p>
+	        <h2>Lenovo Yoga Slim 7i Aura Edition — €1.049</h2>
 <p></p>
 <p>Il <strong>Lenovo Yoga Slim 7i Aura Edition</strong> è un portatile sottile e potente, perfetto per professionisti e creativi. Monta il processore <strong>Intel Core Ultra 7 256V</strong>, <strong>16 GB di RAM LPDDR5x</strong> e <strong>1 TB SSD PCIe Gen 4</strong>, il tutto racchiuso in un elegante chassis <strong>Luna Grey</strong>.</p>
-<p><a href="https://www.amazon.it/dp/B0GQMLG41L" target="_blank">Vedi su Amazon</a></p>
+<p><a href="https://www.amazon.it/dp/B0GQMLG41L" target="_blank" rel="sponsored nofollow noopener">Vedi su Amazon</a></p>
 <h2>Caratteristiche Principali</h2>
 <ul>
 <li><strong>Display</strong>: 14" OLED WUXGA (1920x1200) — neri profondi e colori vividi</li>
@@ -328,18 +481,18 @@
 <li><strong>Colore</strong>: Luna Grey</li>
 </ul>
 <p>Il display OLED da 14" offre un contrasto infinito e una copertura cromatica eccezionale, ideale per fotoritocco, video editing e consumo di contenuti multimediali.</p>
-<p><a href="https://www.amazon.it/dp/B0GQMLG41L" target="_blank"><strong>Vedi su Amazon</strong></a></p>
+<p><a href="https://www.amazon.it/dp/B0GQMLG41L" target="_blank" rel="sponsored nofollow noopener"><strong>Vedi su Amazon</strong></a></p>
 <footer class="post-info">
         <abbr class="published" title="2026-06-10T10:00:00+02:00">
                 Published: Wed 10 June 2026
         </abbr>
 
                 <address class="vcard author">
-                        By                                 <a class="url fn" href="./author/gabriele.html">Gabriele</a>
+                        By                                 <a class="url fn" href="./author/techdropper.html">TechDropper</a>
                 </address>
         <p>In <a href="./category/portatili.html">Portatili</a>.</p>
 <p>tags: <a href="./tag/lenovo.html">lenovo</a> <a href="./tag/yoga.html">yoga</a> <a href="./tag/slim-7i.html">slim 7i</a> <a href="./tag/aura-edition.html">aura edition</a> <a href="./tag/portatile.html">portatile</a> <a href="./tag/oled.html">oled</a> <a href="./tag/ultra-7.html">ultra 7</a> </p>        
-</footer><!-- /.post-info -->      </div><!-- /.entry-content -->
+</footer><!-- /.post-info -->	      </div><!-- /.entry-content -->
 
 
 
