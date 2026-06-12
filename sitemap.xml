@@ -6,14 +6,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
@@ -34,63 +34,70 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/techdropper.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/author/techdropper2.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.3</priority>
+</url>
+
+<url>
+<loc>/category/accessori.html</loc>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.3</priority>
+</url>
+
+<url>
+<loc>/category/domotica.html</loc>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/category/gaming.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/category/monitor.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>/category/offerte.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/category/portatili.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/index2.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
@@ -138,22 +145,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/offerta-tp-link-tapo-c200.html</loc>
-<lastmod>2026-06-10T10:45:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-
-<url>
-<loc>/offerta-ugreen-usb-c-hdmi-switch.html</loc>
-<lastmod>2026-06-11T15:45:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-
-<url>
 <loc>/pages/disclaimer.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -167,429 +160,443 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/tag/144hz.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/200hz.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/24-15.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/24-pollici.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/240hz.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/27-pollici.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/32-pollici.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/accessori.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/amazon-basics.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/asus.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/aura-edition.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/c200.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/cavi.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/confronto.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/driving-force.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/economico.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/fhd.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/force-feedback.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/freesync.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/g29.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/gaming.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/go-15.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/hdmi.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/ips.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/koorui.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/legion.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/lenovo.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/logitech.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/m5.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/mag-272f.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/monitor.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/msi.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/offerta.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/oled.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/pc.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/portatile.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/ps4.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/ps5.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/racing.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/rtx-5060.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/ryzen-5.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/s32dm502.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/samsung.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/sicurezza.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/slim-7i.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/smart-monitor.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/smart-tv.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/streaming.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/switch.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/tapo.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/telecamera.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/tp-link.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/ufficio.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/ugreen.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/ultra-7.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/usb-c.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/vivobook.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/volante.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/wifi.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tag/yoga.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2026-06-12T15:01:59-00:00</lastmod>
+<lastmod>2026-06-12T15:25:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.3</priority>
+</url>
+
+<url>
+<loc>/tp-link-tapo-c200.html</loc>
+<lastmod>2026-06-10T10:45:00+02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>/ugreen-usb-c-hdmi-switch.html</loc>
+<lastmod>2026-06-11T15:45:00+02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
 
 </urlset>
